@@ -9,7 +9,7 @@ import { Icon } from './Icon';
 import { StoryLinkWrapper } from './StoryLinkWrapper';
 
 const CustomButton = styled.button`
-  border: 1px solid green;
+  border: 1px solid red;
   background: lightgreen;
   color: rebeccapurple;
   padding: 1em;
