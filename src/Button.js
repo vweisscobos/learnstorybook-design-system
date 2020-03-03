@@ -316,6 +316,10 @@ const applyStyle = ButtonWrapper => {
   );
 };
 
+
+/**
+ - Alguma documentação
+ **/
 export function Button({
   isDisabled,
   isLoading,

@@ -22,7 +22,10 @@ function ButtonWrapper(props) {
 
 export default {
   title: 'Design System|Button',
-  component: Button,
+  parameters: {
+    component: Button,
+    componentSubtitle: 'Botão com todas as implentações mais comuns'
+  }
 };
 
 export const allButtons = () => (
