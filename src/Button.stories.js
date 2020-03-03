@@ -140,7 +140,7 @@ export const buttonWrapper = () => (
     <Button ButtonWrapper={ButtonWrapper} appearance="primary" isDisabled size="small">
       Disabled
     </Button>
-    <Button ButtonWrapper={ButtonWrapper} appearance="outline" size={select("Size" , ["small", "large"])} containsIcon>
+    <Button ButtonWrapper={ButtonWrapper} appearance="outline" size="small" containsIcon>
       <Icon icon="link" aria-label="Link" />
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="outline" size="small">
@@ -152,7 +152,6 @@ export const buttonWrapper = () => (
 
 buttonWrapper.story = {
   name: 'button wrapper',
-  decorators: [withKnobs]
 };
 
 export const anchorWrapper = () => (
@@ -302,18 +301,25 @@ anchorWrapper.story = {
   name: 'anchor wrapper',
 };
 
-// export const knobs = () => (
-//   <Button
-//       ButtonWrapper={StoryLinkWrapper}
-//       // isDisabled={boolean('isDisabled')}
-//       // appearance={select('Appearance', ['primary', 'secondary', 'outline', 'tertiary', 'primaryOutline', 'secondaryOutline'])}
-//       size={select("Size", ["large", "small"])}
-//       href="http://storybook.js.org"
-//   >
-//     Clique
-//   </Button>
-// )
+export const knobs = () => (
+  <Button
+      ButtonWrapper={StoryLinkWrapper}
+      isDisabled={boolean('isDisabled')}
+      appearance={select('Appearance', [
+        'primary',
+        'secondary',
+        'outline',
+        'tertiary',
+        'primaryOutline',
+        'secondaryOutline'
+      ])}
+      size={select("Size", ["large", "small"])}
+      href="http://storybook.js.org"
+  >
+    Clique
+  </Button>
+)
 
-// knobs.story = {
-//   decorators: [withKnobs],
-// }
+knobs.story = {
+  decorators: [withKnobs],
+}
