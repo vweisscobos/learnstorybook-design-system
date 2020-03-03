@@ -28,8 +28,8 @@ export default {
 export const allButtons = () => (
   <div>
     <Button ButtonWrapper={ButtonWrapper} appearance="primary">Primary</Button>
-    <Button appearance="secondary">Secondary</Button>
-    <Button appearance="tertiary">Tertiary</Button>
+    <Button appearance="secondary" onMouseOver={action("Secondary btn hovering")}>Secondary</Button>
+    <Button appearance="tertiary" onClick={action("Tertiary btn clicked")}>Tertiary</Button>
     <Button appearance="outline">Outline</Button>
     <Button appearance="primaryOutline">Outline primary</Button>
     <Button appearance="secondaryOutline">Outline secondary</Button>
